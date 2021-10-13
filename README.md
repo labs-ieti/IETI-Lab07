@@ -1,2 +1,5 @@
-# IETI-Lab6
-Laboratorio React 2.0
+# IETI-Lab5
+Laboratorio de React
+
+## Integrantes:
+ * Felipe Marin
