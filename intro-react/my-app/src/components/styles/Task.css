@@ -1,0 +1,34 @@
+.card {
+    border: none;
+    border-radius: 8px;
+    /*background: url('../../assets/img/circles.png') no-repeat, linear-gradient(to right, #A74CF2, #617BFB);*/
+}
+.Task-User-Info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+}
+.Task-Card {
+    max-height: 180px;
+    max-width: 520px;
+}
+.Task-Card-Info {
+    padding-left: 0;
+    padding-right: 75px;
+}
+.Task-Card-Info h1{
+    font-size: 23px;
+    color: white;
+}
+.Task-Card-Info p{
+    font-size: 11px;
+    color: white;
+}
+.Task-Add {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    height: 60px;
+}
