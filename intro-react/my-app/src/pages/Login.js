@@ -1,7 +1,7 @@
 import React, {useState}from 'react'
 import {Grid, Container,Paper, Avatar, Typography, TextField, Button, CssBaseline} from '@material-ui/core'
 import {makeStyles} from '@material-ui/core/styles'
-import fondo from './assets/img/Fondo.png'
+import fondo from '../assets/img/Fondo.png'
 import {LockOutlined as LockOutlinedIcon } from '@material-ui/icons'
 
 const useStyles = makeStyles(theme => ({
