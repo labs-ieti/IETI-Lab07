@@ -11,18 +11,19 @@
 .Task-Card {
     max-height: 180px;
     max-width: 520px;
+    opacity: 0.8;
 }
 .Task-Card-Info {
     padding-left: 0;
     padding-right: 75px;
 }
 .Task-Card-Info h1{
-    font-size: 23px;
+    font-size: 24px;
     color: white;
 }
 .Task-Card-Info p{
-    font-size: 11px;
-    color: white;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
 }
 .Task-Add {
     display: block;
