@@ -1,11 +1,15 @@
-.fondo2 {
-    background-image: url(../../assets/img/Fondo2.png);
+.fondo {
+    background-image: url(../../assets/img/Fondo3.png);
     /*background-color: blue;*/
     background-position: center;
 	background-repeat:no-repeat;
 	background-attachment: fixed ;
 	background-size: cover;
+	padding-top: 240px;
+	padding-right: 50px;
 	padding-bottom: 100px;
 	min-height: 100vh;
 	max-height: auto;
+	min-width: 100vh;
+	max-width: auto;
 }

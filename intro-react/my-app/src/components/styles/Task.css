@@ -9,13 +9,16 @@
     margin-left: 200px;
 }
 .Task-Card {
-    max-height: 180px;
-    max-width: 520px;
+    margin: 15px;
+    /*max-height: 150px;*/
+    max-height: auto;
+    min-height: 150px;
+    max-width: 570px;
     opacity: 0.8;
 }
 .Task-Card-Info {
     padding-left: 0;
-    padding-right: 75px;
+    padding-right: 45px;
 }
 .Task-Card-Info h1{
     font-size: 24px;

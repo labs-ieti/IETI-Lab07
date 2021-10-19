@@ -3,6 +3,7 @@ import {Grid, Container,Paper, Avatar, Typography, TextField, Button, CssBaselin
 import {makeStyles} from '@material-ui/core/styles'
 import fondo from '../assets/img/Fondo.png'
 import {LockOutlined as LockOutlinedIcon } from '@material-ui/icons'
+import { Link } from 'react-router-dom'
 
 const useStyles = makeStyles(theme => ({
     root:{
@@ -96,15 +97,17 @@ const Login = () => {
                            value={setBody.password}
                            onChange={handleChange}
                         />
-                        <Button
-                            fullWidth
-                            variant='contained'
-                            color = 'secondary'
-                            className={classes.buttom}
-                            onClick={()=>onSubmit()}
-                        >
-                            JOIN !!
-                        </Button>
+                        <Link to="/home">
+                            <Button
+                                fullWidth
+                                variant='contained'
+                                color = 'secondary'
+                                className={classes.buttom}
+                                onClick={()=>onSubmit()}
+                            >
+                                JOIN !!
+                            </Button>
+                        </Link>
 
                     </form>
 

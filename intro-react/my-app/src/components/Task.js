@@ -20,7 +20,7 @@ class Task extends React.Component {
     }
 
     render(){
-        const {title, description, DueDate, AssignedTo, Status, leftColor,rightColor }=this.props
+        const {title, description, DueDate, AssignedTo, Status, leftColor, rightColor }=this.props
 
         return (
             <div className="card mx-auto Task-Card"
