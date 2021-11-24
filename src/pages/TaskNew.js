@@ -9,9 +9,9 @@ class TaskNew extends React.Component{
         form:{
             title:'',
             description:'',
-            DueDate:'',
-            AssignedTo:'',
-            Status:'',
+            dueDate:'',
+            assignedTo:'',
+            status:'',
             leftColor:'',
             rightColor:''
         }
@@ -24,6 +24,29 @@ class TaskNew extends React.Component{
                 [e.target.name]: e.target.value
             }
             
+        })
+    }
+
+    handleSubmit = async e => {
+        e.preventDefault()
+
+
+
+        const options = {
+            method: 'POST',
+            body: JSON.stringify(this.state.form),
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        }
+
+        await fetch("http://localhost:8000/api/task", options)
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+        })
+        .catch(err => {
+            console.log(err)
         })
     }
 
@@ -40,6 +63,7 @@ class TaskNew extends React.Component{
                         <TaskForm 
                             onChange={this.handleChange}
                             form={this.state.form}
+                            onSubmit={this.handleSubmit}
                         /> 
                     </div>
                 </div>       

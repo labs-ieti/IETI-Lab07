@@ -9,9 +9,9 @@ const TaskList = ({tareas}) => (
                     key={task.id}
                     title={task.title}
                     description={task.description}
-                    DueDate={task.DueDate}
-                    AssignedTo={task.AssignedTo}
-                    Status={task.Status}
+                    dueDate={task.dueDate}
+                    assignedTo={task.assignedTo}
+                    status={task.status}
                     img={task.img}
                     leftColor={task.leftColor}
                     rightColor={task.rightColor}

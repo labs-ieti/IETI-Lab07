@@ -3,17 +3,12 @@ import React from "react";
 import '../components/styles/TaskNew.css'
 
 class TaskForm extends React.Component{
-
-    handleSubmit = e => {
-        e.preventDefault()
-        console.log(this.state)
-    }
     
     render(){
-        const {onChange, form} = this.props
+        const {onChange, form, onSubmit} = this.props
         return(
                 <div className="container">
-                    <form onSubmit={this.handleSubmit}>
+                    <form onSubmit={onSubmit}>
                         <div className="form-group">
                             <input 
                                 type="text" 
@@ -28,7 +23,7 @@ class TaskForm extends React.Component{
                         <div className="form-group">
                             <input 
                                 type="text" 
-                            className="form-control" 
+                                className="form-control" 
                                 placeholder="description" 
                                 name="description"
                                 onChange={onChange}
@@ -41,9 +36,9 @@ class TaskForm extends React.Component{
                                 type="date" 
                                 className="form-control" 
                                 placeholder="DueDate" 
-                                name="DueDate"
+                                name="dueDate"
                                 onChange={onChange}
-                                value={form.DueDate}
+                                value={form.dueDate}
                             />
                         </div>
 
@@ -52,9 +47,9 @@ class TaskForm extends React.Component{
                                 type="text" 
                                 className="form-control" 
                                 placeholder="AssignedTo" 
-                                name="AssignedTo"
+                                name="assignedTo"
                                 onChange={onChange}
-                                value={form.AssignedTo}
+                                value={form.assignedTo}
                             />
                         </div>
 
@@ -63,7 +58,7 @@ class TaskForm extends React.Component{
                                 id="inputState" 
                                 className="form-control"
                                 placeholder="Status" 
-                                name="Status"
+                                name="status"
                                 onChange={onChange}
                                 //value={form.Status}
                             >
